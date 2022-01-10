@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/BookCover"
+        android:layout_width="78dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/BookTitle"
+        android:layout_width="264dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/BookAuthor"
+        app:layout_constraintStart_toEndOf="@+id/BookCover"
+        app:layout_constraintTop_toTopOf="@+id/BookCover" />
+
+    <TextView
+        android:id="@+id/BookAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/BookTitle"
+        app:layout_constraintStart_toEndOf="@+id/BookCover"
+        app:layout_constraintTop_toBottomOf="@+id/BookTitle" />
+
+    <TextView
+        android:id="@+id/BookDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/BookCover"
+        app:layout_constraintEnd_toEndOf="@+id/BookAuthor"
+        app:layout_constraintStart_toEndOf="@+id/BookCover"
+        app:layout_constraintTop_toBottomOf="@+id/BookAuthor"
+        app:layout_constraintVertical_bias="0.272" />
+</androidx.constraintlayout.widget.ConstraintLayout>
